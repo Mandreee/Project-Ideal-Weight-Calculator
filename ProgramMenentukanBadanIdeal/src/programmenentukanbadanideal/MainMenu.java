@@ -12,7 +12,6 @@ public class MainMenu extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         btnCalculate = new javax.swing.JButton();
-        btnEditValue = new javax.swing.JButton();
         btnEditValue1 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
 
@@ -33,16 +32,6 @@ public class MainMenu extends javax.swing.JFrame {
         });
         getContentPane().add(btnCalculate);
         btnCalculate.setBounds(90, 90, 230, 25);
-
-        btnEditValue.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        btnEditValue.setText("Edit Value From Table");
-        btnEditValue.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnEditValueActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnEditValue);
-        btnEditValue.setBounds(90, 130, 230, 25);
 
         btnEditValue1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btnEditValue1.setText("Exit");
@@ -69,12 +58,6 @@ public class MainMenu extends javax.swing.JFrame {
         
     }//GEN-LAST:event_btnCalculateActionPerformed
 
-    private void btnEditValueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditValueActionPerformed
-        // TODO add your handling code here:
-        new MainMenu().setVisible(false);
-        new Frame_Badan_Ideal2().setVisible(true);
-    }//GEN-LAST:event_btnEditValueActionPerformed
-
     private void btnEditValue1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditValue1ActionPerformed
         // TODO add your handling code here:
         System.exit(0);
@@ -91,7 +74,6 @@ public class MainMenu extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCalculate;
-    private javax.swing.JButton btnEditValue;
     private javax.swing.JButton btnEditValue1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
